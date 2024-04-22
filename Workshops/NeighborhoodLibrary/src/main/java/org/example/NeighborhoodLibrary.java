@@ -13,7 +13,7 @@ import java.util.Scanner;
 
             // Main menu
             while (true) {
-                System.out.println("\nNeighborhood Library - Home Screen");
+                System.out.println("Neighborhood Library - Home Screen");
                 System.out.println("1. Show Available Books");
                 System.out.println("2. Show Checked Out Books");
                 System.out.println("3. Exit");
@@ -84,7 +84,7 @@ import java.util.Scanner;
         }
 
         private static void showCheckedOutBooks() {
-            System.out.println("\nChecked Out Books:");
+            System.out.println("Checked Out Books:");
             for (Book book : inventory) {
                 if (book != null && book.isCheckedOut()) {
                     System.out.println("ID: " + book.getId() + " | ISBN: " + book.getIsbn() + " | Title: " + book.getTitle() + " | Checked Out To: " + book.getCheckedOutTo());
